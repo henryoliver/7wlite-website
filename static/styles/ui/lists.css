@@ -1,0 +1,22 @@
+.list {
+  display: block;
+}
+
+.list--alpha {
+  list-style-position: inside;
+  list-style-type: lower-alpha;
+}
+
+.list--decimal {
+  list-style-position: inside;
+  list-style-type: decimal;
+}
+
+.list__item {
+  margin-bottom: 16px;
+
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
+}

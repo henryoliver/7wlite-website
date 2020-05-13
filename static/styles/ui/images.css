@@ -1,0 +1,42 @@
+/* Icons */
+i[class^="icon-"],
+a[class^="icon-"],
+button[class^="icon-"] {
+  display: inline-block;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.icon-cheap {
+  width: 44px;
+  height: 44px;
+
+  background-image: url("/assets/images/icon-cheap.svg");
+}
+
+.icon-no-chat {
+  width: 42px;
+  height: 42px;
+
+  background-image: url("/assets/images/icon-no-chat.svg");
+}
+
+.icon-skip {
+  width: 41px;
+  height: 38px;
+
+  background-image: url("/assets/images/icon-skip.svg");
+}
+
+/* Arrows */
+i[class^="arrow-"],
+a[class^="arrow-"],
+button[class^="arrow-"] {
+  display: inline-block;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

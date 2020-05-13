@@ -1,0 +1,11 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+    7wlite -- Dev Team -- @7wlite
+
+# THANKS
+    7wlite Team
+
+# TECHNOLOGY COLOPHON
+    CSS3, HTML5 and JavaScript

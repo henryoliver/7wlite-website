@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>icons8-no_chat</title>
+    <desc>Created with Sketch.</desc>
+    <g id="page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="large" transform="translate(-139.000000, -2948.000000)" fill="#2E3445" fill-rule="nonzero">
+            <g id="icons8-no_chat" transform="translate(139.000000, 2948.000000)">
+                <polygon id="Path" transform="translate(21.000707, 21.000707) rotate(-45.001000) translate(-21.000707, -21.000707) " points="19.0007071 -6.69829291 23.0007071 -6.69829291 23.0007071 48.6997071 19.0007071 48.6997071"></polygon>
+                <path d="M16.476,8 L24,8 L24,15.524 L28,19.524 L28,18 L36,18 L36,27.524 L40,31.524 L40,18 C40,15.794 38.206,14 36,14 L28,14 L28,8 C28,5.794 26.206,4 24,4 L12.476,4 L16.476,8 Z" id="Path"></path>
+                <path d="M40,31.524 L40,18 C40,15.794 38.206,14 36,14 L28,14 L28,8 C28,5.794 26.206,4 24,4 L12.476,4 L40,31.524 Z" id="Path" opacity="0.3"></path>
+                <path d="M34.818,32 L16,32 L16,26 L24,26 C25.312,26 26.468,25.356 27.198,24.378 L24,21.182 L24,22 L4,22 L4,8 L10.818,8 L6.818,4 L4,4 C1.794,4 0,5.794 0,8 L0,32 L6,26 L12,26 L12,32 C12,34.206 13.794,36 16,36 L36,36 C36.8,36 37.544,35.758 38.17,35.352 L34.818,32 Z" id="Path"></path>
+                <path d="M6.818,4 L4,4 C1.794,4 0,5.794 0,8 L0,32 L6,26 L12,26 L12,32 C12,34.206 13.794,36 16,36 L36,36 C36.8,36 37.544,35.758 38.17,35.352 L6.818,4 Z" id="Path" opacity="0.3"></path>
+            </g>
+        </g>
+    </g>
+</svg>

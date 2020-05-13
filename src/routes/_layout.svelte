@@ -1,22 +1,17 @@
 <script>
-	import Nav from '../components/Nav.svelte';
+    import { stores } from '@sapper/app'
+    import Nav from '../components/Nav.svelte';
+    import GoogleAnalytics from 'sapper-google-analytics/GoogleAnalytics.svelte'
 
-	export let segment;
+    let analyticsId = 'UA-143056927-1'
+
+    export let segment;
 </script>
-
-<style>
-	main {
-		position: relative;
-		max-width: 56em;
-		background-color: white;
-		padding: 2em;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-</style>
 
 <Nav {segment}/>
 
 <main>
-	<slot></slot>
+    <slot></slot>
 </main>
+
+<GoogleAnalytics {stores} id={analyticsId} />

@@ -1,64 +1,51 @@
 <script context="module">
-	export async function preload({ params, query }) {
-		// the `slug` parameter is available because
-		// this file is called [slug].svelte
-		const res = await this.fetch(`blog/${params.slug}.json`);
-		const data = await res.json();
+    export async function preload({ params, query }) {
+        // the `slug` parameter is available because
+        // this file is called [slug].svelte
+        const res = await this.fetch(`blog/${params.slug}.json`);
+        const data = await res.json();
 
-		if (res.status === 200) {
-			return { post: data };
-		} else {
-			this.error(res.status, data.message);
-		}
-	}
+        if (res.status === 200) {
+            return { post: data };
+        } else {
+            this.error(res.status, data.message);
+        }
+    }
 </script>
 
 <script>
-	export let post;
+    export let post;
 </script>
 
-<style>
-	/*
-		By default, CSS is locally scoped to the component,
-		and any unused styles are dead-code-eliminated.
-		In this page, Svelte can't know which elements are
-		going to appear inside the {{{post.html}}} block,
-		so we have to use the :global(...) modifier to target
-		all elements inside .content
-	*/
-	.content :global(h2) {
-		font-size: 1.4em;
-		font-weight: 500;
-	}
-
-	.content :global(pre) {
-		background-color: #f9f9f9;
-		box-shadow: inset 1px 1px 5px rgba(0,0,0,0.05);
-		padding: 0.5em;
-		border-radius: 2px;
-		overflow-x: auto;
-	}
-
-	.content :global(pre) :global(code) {
-		background-color: transparent;
-		padding: 0;
-	}
-
-	.content :global(ul) {
-		line-height: 1.5;
-	}
-
-	.content :global(li) {
-		margin: 0 0 0.5em 0;
-	}
-</style>
-
 <svelte:head>
-	<title>{post.title}</title>
+    <title>{post.title}</title>
+    <title>The Four Forces That Make People Adopt or Leave a Product | 7wlite Blog</title>
+    <meta name="description" content="If people hate the product they use now, they'll consider switching. That's a push force. If they see something in your product that will make them perform...">
 </svelte:head>
+
+<article class="post">
+    <div class="box box--small">
+        <header class="post__header">
+            <a href="/blog" class="post__link">All posts</a>
+            <h2>The four forces that make people adopt or leave a product</h2>
+        </header>
+
+        <p>If people hate the product they use now, they'll consider switching. That's a push force.</p>
+        <p>If they see something in your product that will make them perform better (without pissing them off), they'll consider adopting it. Call it a pull force.</p>
+        <p>Both of the above are positive forces that could act in your favor. Reinforce them, especially when onboarding new users to your product. Make it clear that:</p>
+        <p>a) You don't have the annoying stuff your competitors have</p>
+        <p>b) You are the one that helps them get more value, faster than anyone else</p>
+        <p>When talking about the different things your product does, let people know how it works. If you don't explain it, they'll get anxious, and the switch won't happen. That's the third force: anxiety.</p>
+        <p>When considering going to a different solution, customers will also want to know how to handle the switch. Let them know that your product and/or your team will take care of this for them. RReassure them of how your product assists them importing data, customer support, and compatibility, so they stop fearing the change. And this is the last force: habit.</p>
+        <p>You convert a customer from your competitors when push and pull forces are bigger than anxiety and habit forces. You lose customers when the same happens, only in favor of your competition.</p>
+        <footer class="post__footer">
+            <a href="/blog" class="post__link">All posts</a>
+        </footer>
+    </div>
+</article>
 
 <h1>{post.title}</h1>
 
-<div class='content'>
-	{@html post.html}
+<div>
+    {@html post.html}
 </div>
