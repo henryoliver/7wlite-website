@@ -13,21 +13,21 @@ button[class^="icon-"] {
   width: 44px;
   height: 44px;
 
-  background-image: url("/assets/images/icon-cheap.svg");
+  background-image: url("/images/icon-cheap.svg");
 }
 
 .icon-no-chat {
   width: 42px;
   height: 42px;
 
-  background-image: url("/assets/images/icon-no-chat.svg");
+  background-image: url("/images/icon-no-chat.svg");
 }
 
 .icon-skip {
   width: 41px;
   height: 38px;
 
-  background-image: url("/assets/images/icon-skip.svg");
+  background-image: url("/images/icon-skip.svg");
 }
 
 /* Arrows */

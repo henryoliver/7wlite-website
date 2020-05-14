@@ -185,7 +185,7 @@ input[name="nav-trigger"]:checked + .header__nav-trigger::after {
 
   content: "";
 
-  background-image: url("/assets/images/pattern-line-box-lg.png");
+  background-image: url("/images/pattern-line-box-lg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -268,15 +268,15 @@ input[name="nav-trigger"]:checked + .header__nav-trigger::after {
 }
 
 .cases__figure--playlana {
-  background-image: url("/assets/images/cases-playlana.jpg");
+  background-image: url("/images/cases-playlana.jpg");
 }
 
 .cases__figure--vrolio {
-  background-image: url("/assets/images/cases-vrolio.jpg");
+  background-image: url("/images/cases-vrolio.jpg");
 }
 
 .cases__figure--photoday {
-  background-image: url("/assets/images/cases-photoday.jpg");
+  background-image: url("/images/cases-photoday.jpg");
 }
 
 .cases__details {
@@ -324,7 +324,7 @@ input[name="nav-trigger"]:checked + .header__nav-trigger::after {
 
   content: "";
 
-  background-image: url("/assets/images/office.png");
+  background-image: url("/images/office.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -582,7 +582,7 @@ input[name="nav-trigger"]:checked + .header__nav-trigger::after {
     width: 383px;
     height: 861px;
 
-    background-image: url("/assets/images/pattern-line-box-md.png");
+    background-image: url("/images/pattern-line-box-md.png");
   }
 
   .foundation__question {
@@ -624,7 +624,7 @@ input[name="nav-trigger"]:checked + .header__nav-trigger::after {
 
     content: "";
 
-    background-image: url("/assets/images/office.png");
+    background-image: url("/images/office.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -796,7 +796,7 @@ input[name="nav-trigger"]:checked + .header__nav-trigger::after {
     width: 380px;
     height: 1032px;
 
-    background-image: url("/assets/images/pattern-line-box-sm.png");
+    background-image: url("/images/pattern-line-box-sm.png");
   }
 
   .foundation__question-phrase {
@@ -899,14 +899,14 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
   .cases__figure--playlana {
-    background-image: url("/assets/images/cases-playlana@2x.jpg");
+    background-image: url("/images/cases-playlana@2x.jpg");
   }
 
   .cases__figure--vrolio {
-    background-image: url("/assets/images/cases-vrolio@2x.jpg");
+    background-image: url("/images/cases-vrolio@2x.jpg");
   }
 
   .cases__figure--playlana {
-    background-image: url("/assets/images/cases-photoday@2x.jpg");
+    background-image: url("/images/cases-photoday@2x.jpg");
   }
 }

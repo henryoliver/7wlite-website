@@ -3,7 +3,7 @@
   font-weight: normal;
   font-style: normal;
 
-  src: url("../assets/fonts/gilroy-extrabold.woff2") format("woff2");
+  src: url("/fonts/gilroy-extrabold.woff2") format("woff2");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-weight: normal;
   font-style: normal;
 
-  src: url("../assets/fonts/gilroy-light.woff2") format("woff2");
+  src: url("/fonts/gilroy-light.woff2") format("woff2");
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   font-weight: normal;
   font-style: normal;
 
-  src: url("../assets/fonts/metropolis-bold.woff2") format("woff2");
+  src: url("/fonts/metropolis-bold.woff2") format("woff2");
 }
 
 @font-face {
@@ -27,7 +27,7 @@
   font-weight: normal;
   font-style: normal;
 
-  src: url("../assets/fonts/metropolis-regular.woff2") format("woff2");
+  src: url("/fonts/metropolis-regular.woff2") format("woff2");
 }
 
 html {

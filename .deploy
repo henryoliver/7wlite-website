@@ -1,0 +1,19 @@
+#!/bin/bash
+
+ERRORSTRING="Error. Please make sure you've indicated correct parameters"
+
+if [ $# -eq 0 ]
+    then
+        echo $ERRORSTRING;
+elif [ $1 == "dry" ]
+    then
+        echo "Running dry-run"
+        rsync --dry-run --update --archive --recursive --compress --progress --human-readable --exclude-from=.rsyncexclude --rsync-path="sudo rsync" ./ 7wlite:/etc/nginx
+
+elif [ $1 == "live" ]
+    then
+        echo "Running actual deploy"
+        rsync --update --archive --recursive --compress --progress --human-readable --exclude-from=.rsyncexclude --rsync-path="sudo rsync" ./ 7wlite:/etc/nginx
+else
+    echo $ERRORSTRING;
+fi

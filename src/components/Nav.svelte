@@ -5,7 +5,7 @@
 <header class="box flex between middle-sm header">
     <figure class="flex header__logo">
         <a href="." aria-current="{segment === undefined ? 'page' : undefined}">
-            <img class="header__logo-image" src="/assets/images/logo.png"  srcset="/assets/images/logo@2x.png 2x" alt="7wlite" />
+            <img class="header__logo-image" src="images/logo.png"  srcset="images/logo@2x.png 2x" alt="7wlite" />
         </a>
     </figure>
 

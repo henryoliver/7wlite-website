@@ -1,65 +1,65 @@
 <script>
-    // Send form submit
-    const form = document.querySelector('.js-form');
-    const formTitle = document.querySelector('.js-title');
-    const messageThanks = document.querySelector('.js-thanks');
-    const messageError = document.querySelector('.js-error');
-    const sendButton = document.querySelector('.js-send');
-
-    if (form) {
-        form.addEventListener('submit', (event) => {
-            event.preventDefault();
-
-            const formData = new FormData(form);
-
-            let data = {};
-
-            for (let [key, value] of formData.entries()) {
-                data[key] = value;
-            }
-
-            sendButton.classList.toggle('button--disable');
-            messageError.classList.replace('visible', 'hidden');
-            messageThnks.classList.replace('visible', 'hidden');
-
-            if (grecaptcha.getResponse()) {
-                send(data);
-            } else {
-                sendButton.classList.toggle('button--disable');
-                messageError.classList.replace('hidden', 'visible');
-            }
-        });
-
-        async function send(data) {
-            const headers = new Headers({
-                'Content-Type': 'application/json'
-            });
-
-            try {
-                const response = await fetch('https://us-central1-sevenwlite-project.cloudfunctions.net/email', {
-                    method: 'POST',
-                    headers,
-                    mode: 'cors',
-                    cache: 'default',
-                    body: JSON.stringify(data)
-                });
-
-                if (!response.ok) {
-                    throw new Error('Network response was not ok.');
-                }
-
-                form.classList.replace('visible', 'hidden');
-                formTitle.classList.replace('opaque', 'transparent');
-                messageThanks.classList.replace('hidden', 'visible');
-            } catch (error) {
-                console.error(error);
-                sendButton.classList.toggle('button--disable');
-                messageError.classList.replace('hidden', 'visible');
-            } finally {
-                console.info('Finally');
-            }
-        }
-    }
+    /* // Send form submit */
+    /* const form = document.querySelector('.js-form'); */
+    /* const formTitle = document.querySelector('.js-title'); */
+    /* const messageThanks = document.querySelector('.js-thanks'); */
+    /* const messageError = document.querySelector('.js-error'); */
+    /* const sendButton = document.querySelector('.js-send'); */
+    /*  */
+    /* if (form) { */
+    /*     form.addEventListener('submit', (event) => { */
+    /*         event.preventDefault(); */
+    /*  */
+    /*         const formData = new FormData(form); */
+    /*  */
+    /*         let data = {}; */
+    /*  */
+    /*         for (let [key, value] of formData.entries()) { */
+    /*             data[key] = value; */
+    /*         } */
+    /*  */
+    /*         sendButton.classList.toggle('button--disable'); */
+    /*         messageError.classList.replace('visible', 'hidden'); */
+    /*         messageThnks.classList.replace('visible', 'hidden'); */
+    /*  */
+    /*         if (grecaptcha.getResponse()) { */
+    /*             send(data); */
+    /*         } else { */
+    /*             sendButton.classList.toggle('button--disable'); */
+    /*             messageError.classList.replace('hidden', 'visible'); */
+    /*         } */
+    /*     }); */
+    /*  */
+    /*     async function send(data) { */
+    /*         const headers = new Headers({ */
+    /*             'Content-Type': 'application/json' */
+    /*         }); */
+    /*  */
+    /*         try { */
+    /*             const response = await fetch('https://us-central1-sevenwlite-project.cloudfunctions.net/email', { */
+    /*                 method: 'POST', */
+    /*                 headers, */
+    /*                 mode: 'cors', */
+    /*                 cache: 'default', */
+    /*                 body: JSON.stringify(data) */
+    /*             }); */
+    /*  */
+    /*             if (!response.ok) { */
+    /*                 throw new Error('Network response was not ok.'); */
+    /*             } */
+    /*  */
+    /*             form.classList.replace('visible', 'hidden'); */
+    /*             formTitle.classList.replace('opaque', 'transparent'); */
+    /*             messageThanks.classList.replace('hidden', 'visible'); */
+    /*         } catch (error) { */
+    /*             console.error(error); */
+    /*             sendButton.classList.toggle('button--disable'); */
+    /*             messageError.classList.replace('hidden', 'visible'); */
+    /*         } finally { */
+    /*             console.info('Finally'); */
+    /*         } */
+    /*     } */
+    /* } */
 </script>
 
 <svelte:head>
@@ -415,7 +415,7 @@
         <h4 class="foundation__subtitle">A person that uses your product for the first time has radically different expectations and skill levels than a customer that has used it for years</h4>
         </hgroup>
         <figure class="flex-2 foundation__checkpoints">
-            <img src="/assets/images/check-points.png"  srcset="/assets/images/check-points@2x.png 2x" alt="Checkpoints" />
+            <img src="images/check-points.png"  srcset="images/check-points@2x.png 2x" alt="Checkpoints" />
         </figure>
     </header>
 
@@ -440,7 +440,7 @@
         <aside class="flex-3 flex-6-md">
             <h1>Understand what motivates people and create a powerful alignment</h1>
             <figure class="foundation__intersection">
-                <img src="assets/images/intersection.svg" alt="Intersection" width="100%" />
+                <img src="images/intersection.svg" alt="Intersection" width="100%" />
             </figure>
         </aside>
         <ol class="flex flex-3 flex-6-sm column self-end-md foundation__questions">
@@ -452,8 +452,8 @@
             </li>
             <li class="foundation__question">
                 <h4 class="foundation__question-phrase">We pick the aspects that support this story and reshape them in a special cut, with easy and logical tasks, so they experience real value</h4>
+            </li>
         </ol>
-        </ul>
     </article>
 </main>
 

@@ -3,7 +3,7 @@
     import Nav from '../components/Nav.svelte';
     import GoogleAnalytics from 'sapper-google-analytics/GoogleAnalytics.svelte'
 
-    let analyticsId = 'UA-143056927-1'
+    let analyticsId = process.env.GOOGLE_ANALYTICS;
 
     export let segment;
 </script>
